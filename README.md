@@ -3,7 +3,7 @@
 Train the C3D network with my own data set. Video or gif can be supported as a training file. Video streams or image frames can be used as input for detection.
 
 ## Environment
-* opencv-python == 4.5..48
+* opencv-python == 4.5.1.48
 * keras == 2.0.8
 * tensorflow-gpu == 1.3
 * pillow == 8.1.2
