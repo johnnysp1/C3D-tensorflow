@@ -3,9 +3,10 @@
 Train the C3D network with my own data set. Video or gif can be supported as a training file. Video streams or image frames can be used as input for detection.
 
 ## Environment
-* opencv-3.2
-* keras-2.0.8
-* tensorflow-1.3
+* opencv-python == 4.5..48
+* keras == 2.0.8
+* tensorflow-gpu == 1.3
+ccc
 ## Train your own data
 * Place the data in the `datasets/ucf101`. The label for training (train_file.txt), label for testing (test_file.txt), are placed in the `/ucfTrainTestlist`. Record category in classInd.txt.
 
