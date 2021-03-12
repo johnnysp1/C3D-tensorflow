@@ -3,6 +3,7 @@
 Train the C3D network with UCF-101(as an example) or other dataset. Video or gif can be supported as a training file. Video streams or image frames can be used as input for detection.
 
 ## Environment
+* python == 3.6
 * opencv-python == 4.5.1.48
 * keras == 2.0.8
 * tensorflow-gpu == 1.3
@@ -12,9 +13,12 @@ Train the C3D network with UCF-101(as an example) or other dataset. Video or gif
 * cuda 8
 * cudnn 6
 ## Train your own data
-* Place the data in the `datasets/ucf-101`. Run the video2list.py to get the label for training (train_file.txt), the label for testing (test_file.txt), and the record category (classInd.txt), which are all placed in the `/ucfTrainTestlist`.
+* Place the data in the `datasets/ucf-101`. 
+
+* Run the video2list.py to get the label for training (train_file.txt), the label for testing (test_file.txt), and the record category (classInd.txt), which are all placed in the `/ucfTrainTestlist`.
 
 * Run `video2img.py` and save it in the datasets/ucfimgs. Currently gif and video formats are supported.
+
 
 * Run `make_label_txt.py` and generate train_list.txt and test_list.txt.
 
