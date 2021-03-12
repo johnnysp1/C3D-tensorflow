@@ -1,6 +1,6 @@
 # 90% of code come from https://github.com/lianggyu/C3D-Action-Recognition
 # C3D-Action-Recognition
-Train the C3D network with UCF-101. Video or gif can be supported as a training file. Video streams or image frames can be used as input for detection.
+Train the C3D network with UCF-101(as an example) or other dataset. Video or gif can be supported as a training file. Video streams or image frames can be used as input for detection.
 
 ## Environment
 * opencv-python == 4.5.1.48
@@ -12,7 +12,7 @@ Train the C3D network with UCF-101. Video or gif can be supported as a training 
 * cuda 8
 * cudnn 6
 ## Train your own data
-* Place the data in the `datasets/ucf101`. The label for training (train_file.txt), label for testing (test_file.txt), are placed in the `/ucfTrainTestlist`. Record category in classInd.txt.
+* Place the data in the `datasets/ucf-101`. Run the video2list.py to get the label for training (train_file.txt), the label for testing (test_file.txt), and the record category (classInd.txt), which are all placed in the `/ucfTrainTestlist`.
 
 * Run `video2img.py` and save it in the datasets/ucfimgs. Currently gif and video formats are supported.
 
