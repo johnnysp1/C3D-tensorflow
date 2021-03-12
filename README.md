@@ -8,7 +8,7 @@ Train the C3D network with my own data set. Video or gif can be supported as a t
 * tensorflow-gpu == 1.3
 * pillow == 8.1.2
 * matplotlib == 3.3.4
-* h5py : use pip install h5py==2.10 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+* h5py : $ pip install h5py==2.10 -i https://pypi.tuna.tsinghua.edu.cn/simple/
 * cuda 8
 * cudnn 6
 ## Train your own data
