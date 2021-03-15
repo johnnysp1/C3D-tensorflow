@@ -13,7 +13,9 @@ Train the C3D network with UCF-101(as an example) or other dataset. Video or gif
 * cuda 8
 * cudnn 6
 ## Train your own data
-* Place the videos in the `datasets/ucf-101`, the videos must be named as `category_name.avi`, there are already three categories in the `datasets/ucf-101` as examples. 
+* Place the videos in the `datasets/ucf-101`, the videos must be named as `category_name.avi`, there are already three categories in the `datasets/ucf-101` as examples.
+
+* If you are using UCF-101 dataset, run `rename.py` after you place videos in `datasets/ucf-101`.
 
 * Run the `video2list.py` to get the label for training (`train_file.txt`), the label for testing (`test_file.txt`), and the record category (`classInd.txt`), which are all placed in the `/ucfTrainTestlist`.
 
