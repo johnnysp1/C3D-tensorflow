@@ -1,5 +1,5 @@
-# 90% of code come from https://github.com/lianggyu/C3D-Action-Recognition
-# C3D-Action-Recognition
+## 90% of code come from https://github.com/lianggyu/C3D-Action-Recognition
+## C3D-Action-Recognition
 Train the C3D network with UCF-101(as an example) or other dataset. Video or gif can be supported as a training file. Video streams or image frames can be used as input for detection.
 
 ## Environment
@@ -13,17 +13,19 @@ Train the C3D network with UCF-101(as an example) or other dataset. Video or gif
 * cuda 8
 * cudnn 6
 ## Train your own data
-* Place the data in the `datasets/ucf-101`. 
+* Place the videos in the `datasets/ucf-101`, the videos must be named as `category_name.avi`, there are already three categories in the `datasets/ucf-101` as an example. 
 
 * Run the `video2list.py` to get the label for training (`train_file.txt`), the label for testing (`test_file.txt`), and the record category (`classInd.txt`), which are all placed in the `/ucfTrainTestlist`.
 
-* Run `video2img.py` and save it in the datasets/ucfimgs. Currently gif and video formats are supported.
+* Run `video2img.py` and save it in the `datasets/ucfimgs`. Currently gif and video formats are supported.
 
-* Run `make_label_txt.py` and generate train_list.txt and test_list.txt.
+* Run `make_label_txt.py` and generate `train_list.txt` and `test_list.txt`.
 
 * Modify `model.py`, such as lines 7~9.
 
-* Modify train_c3d.py, such as lines 158~164. Run `train_c3d.py`.
+* Modify `train_c3d.py`, such as lines 158~164. Run `train_c3d.py`.
+
+* After these, run `train_c3d.py` to train your dataset.
 ## Demo
 * Modify `config.txt`<br>
   classInd_path : the file path of the record category<br>
