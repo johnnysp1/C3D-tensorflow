@@ -52,5 +52,4 @@ Train the C3D network with UCF-101(as an example) or other dataset. Video or gif
  * Run `video_demo.py`<br>
  Identification of UCF-101
 <br>
- <img src="https://github.com/johnnysp1/C3D-tensorflow/blob/master/results/ApplyEyeMakeup.png" width="300"/>     
- <img src="https://github.com/johnnysp1/C3D-tensorflow/blob/master/results/Archery.png" width="300"><br>
+ <img src="https://github.com/johnnysp1/C3D-tensorflow/blob/master/results/ApplyEyeMakeup.png" width="300"/>     <img src="https://github.com/johnnysp1/C3D-tensorflow/blob/master/results/Archery.png" width="300"><br>
