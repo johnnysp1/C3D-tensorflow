@@ -51,5 +51,6 @@ Train the C3D network with UCF-101(as an example) or other dataset. Video or gif
   <br>
  * Run `video_demo.py`<br>
  Identification of UCF-101
- <img src="https://github.com/lianggyu/C3D-Action-Recognition/blob/master/results/frame_1.png" width="300" alt="normal-event"/>     <img src="https://github.com/lianggyu/C3D-Action-Recognition/blob/master/results/frame_2.png" width="387" alt="abnormal-event"/><br>
+ <img src="https://github.com/johnnysp1/C3D-tensorflow/blob/master/results/Archery.png"/>     
+
  
