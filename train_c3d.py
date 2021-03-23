@@ -143,7 +143,7 @@ def generator_val_batch(val_txt,batch_size,num_classes,img_path):
 
 
 def main():
-    img_path = '/c3d2/C3D-Action-Recognition/datasets/ucfimgs/'
+    img_path = 'datasets/ucfimgs/'
     train_file = 'train_list.txt'
     test_file = 'test_list.txt'
     f1 = open(train_file, 'r')
@@ -155,9 +155,9 @@ def main():
     f2.close()
     val_samples = len(lines)
 
-    num_classes = 3
+    num_classes = 101
     batch_size = 16
-    epochs = 16
+    epochs = 100
 
     model = c3d_model()
     lr = 0.005

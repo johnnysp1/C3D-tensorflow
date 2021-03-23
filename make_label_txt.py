@@ -1,6 +1,6 @@
 import os
 
-img_path = '/c3d2/C3D-Action-Recognition/datasets/ucfimgs/'
+img_path = 'datasets/ucfimgs/'
 f1 = open('ucfTrainTestlist/train_file.txt','r')
 f2 = open('ucfTrainTestlist/test_file.txt','r')
 

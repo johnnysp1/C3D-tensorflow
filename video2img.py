@@ -5,8 +5,8 @@ from PIL import ImageFile
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
-video_path = '/c3d2/C3D-Action-Recognition/datasets/ucf-101/'
-save_path = '/c3d2/C3D-Action-Recognition/datasets/ucfimgs/'
+video_path = 'datasets/ucf-101/'
+save_path = 'datasets/ucfimgs/'
 
 action_list = os.listdir(video_path)
 
@@ -19,17 +19,14 @@ for action in action_list:
         if not os.path.exists(save_path+action+'/'+prefix):
             os.mkdir(save_path+action+'/'+prefix)
         save_name = save_path + action + '/' + prefix + '/'
-        #save_name = save_path + prefix + '/'
         video_name = video_path+action+'/'+video
-        #print(video_name)
         name = video_name.split('.')[1]
-        #print(name)
+
         if name == "avi":
             cap = cv2.VideoCapture(video_name)
             ret, frame = cap.read()
             print(ret)
-            #print(os.path.exists(video_name))
-            #print(video_name)
+
             fps = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
             print(fps)
             fps_count = 0

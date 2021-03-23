@@ -100,8 +100,8 @@ def main(video_stream):
      #   print('release'+i)
 
 if __name__ == '__main__':
-    video_stream = {'camera_1': [], 'camera_2': [[],'/c3d2/C3D-Action-Recognition/video/aaa.avi','results/aaa.avi' ]}
+    video_stream = {'camera_1': [], 'camera_2': [[],'video/aaa.avi','results/aaa.avi' ]}
     video_stream['camera_1'].append([])
-    video_stream['camera_1'].append('/c3d2/C3D-Action-Recognition/video/bbb.avi')
+    video_stream['camera_1'].append('video/bbb.avi')
     video_stream['camera_1'].append('results/bbb.avi')
     main(video_stream)
