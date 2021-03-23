@@ -12,7 +12,6 @@ import matplotlib
 matplotlib.use('AGG')
 import matplotlib.pyplot as plt
 
-# 使用第二张GPU卡
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 def plot_history(history, result_dir):
